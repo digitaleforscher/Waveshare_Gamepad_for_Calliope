@@ -1,22 +1,21 @@
 {
     "name": "waveshare_gamepad_for_calliope",
-    "version": "0.0.0",
-    "description": "",
+    "version": "0.0.1",
+    "description": "modified library for calliope mini",
     "dependencies": {
         "core": "*",
         "radio": "*"
     },
     "files": [
         "README.md",
-        "main.blocks",
-        "main.ts"
+        "WSJoyStick.ts"
     ],
     "testFiles": [
         "test.ts"
     ],
-    "public": true,
+    "public": false,
     "supportedTargets": [
         "calliopemini"
     ],
-    "preferredEditor": "blocksprj"
+    "preferredEditor": "tsprj"
 }
