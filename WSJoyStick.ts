@@ -22,16 +22,16 @@ enum DIR {
 }
 
 enum KEY {
-    P = 0,
-    A = 1,
-    B = 2,
-    C = 3,
-    D = 4,
-    E = 5,
-    F = 6,
+    P = 16,
+    A = 11,
+    B = 10,
+    C = 22,
+    D = 21,
+    E = 20,
+    F = 17,
 }
 
-let JoyStick_P = DigitalPin.C8;     //P8
+let JoyStick_P = DigitalPin.C10;     //P8
 let JoyStick_X = AnalogPin.P1;
 let JoyStick_Y = AnalogPin.P2;
 let KEY_A = DigitalPin.C5;          //P5
