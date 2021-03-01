@@ -68,8 +68,6 @@ namespace WSJoyStick {
     export function Listen_Key(pin: KEY): boolean {
         let Val = 2;
         
-        serial.writeValue("KEY", pin);
-        
         //Read pin 
         if (pin == KEY.P) {
             Val = pins.digitalReadPin(JoyStick_P);
@@ -100,7 +98,7 @@ namespace WSJoyStick {
     //% weight=80
     export function onKey(pin: KEY, body: Action): void {
         let Pin = 0;
-
+        serial.writeValue("KEY", pin);
         //Read pin 
         if (pin == KEY.P) {
             Pin = JoyStick_P;
